@@ -97,7 +97,49 @@ ol {
 .project-description {
   font-size: 0.9rem;
 }
+.form-title {
+  padding-bottom: 0.7em;
+}
+.contact-us {
+  background-color: var(--white-clr);
+  padding: 3em 0;
+}
+input[type='text'],
+input[type='email'] {
+  border: none;
+  background-color: var(--dark-grey);
+  border-radius: 2px;
+  height: 1.5rem;
+  width: 80%;
+  font-family: var(--poppins);
+}
 
+.skill-level {
+  border: none;
+  background-color: var(--dark-grey);
+  border-radius: 2px;
+  font-family: var(--poppins);
+  font-size: 1rem;
+}
+textarea {
+  border: none;
+  background-color: var(--dark-grey);
+
+  border-radius: 2px;
+  width: 80%;
+  font-family: var(--poppins);
+}
+.enroll-btn {
+  margin-top: 0.5em;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: var(--light-green);
+  padding: 0.5em 1em;
+  border-radius: 2px;
+  color: #fefefe;
+  font-family: var(--poppins);
+}
 footer {
   background-color: var(--light-grey);
   padding: 3em 6em 3em 3em;

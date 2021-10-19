@@ -105,6 +105,45 @@
 
     <!-- contact form  -->
 
+    <section class="contact-us">
+      <div class="container">
+        <h1 class="form-title">Enroll Today</h1>
+        <form action="">
+          <label for="first-name">First Name*</label><br />
+          <input type="text" required /><br />
+          <label for="last-name">Last Name*</label><br />
+          <input type="text" required /><br />
+          <label for="email">Email*</label><br />
+          <input type="email" required /><br />
+          <label for="cnin">CNIC* (12345-1234567-1)</label><br />
+          <input type="text" pattern="\d{5}-\d{7}-\d{1}" required /><br /><br />
+          <label for="skill-level">Select Your Skill Level</label><br />
+          <select class="skill-level" name="skill-level" id="">
+            <option value="">--select your skill level--</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="expert">Expert</option>
+          </select>
+          <br />
+          <br />
+          <label for="gender">Gender</label><br />
+          <input type="radio" name="gender" id="" value="Male" />Male
+          <input type="radio" name="gender" id="" value="femail" />Female
+          <br /><br />
+          <label for="">What would you like to learn</label> <br />
+          <input type="checkbox" name="learning" /> JavaScript <br />
+          <input type="checkbox" name="learning" /> HTML CSS <br />
+          <input type="checkbox" name="learning" /> Freelancing <br /><br />
+          <label for="textarea"
+            >Why Do You Wnat to Join The Course Explain Breifly</label
+          >
+          <br />
+          <textarea name="" id="" cols="40" rows="5"></textarea><br />
+          <button class="enroll-btn" type="submit">Enroll Now</button>
+        </form>
+      </div>
+    </section>
+
     <footer>
       <div class="logo-footer">
         <img src="./img/logo.svg" alt="" />
