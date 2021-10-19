@@ -105,7 +105,7 @@ footer {
 footer h2 {
   display: inline-block;
   padding-top: 1em;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid var(--font-clr);
   font-weight: 500;
 }
 .social-icons i {
