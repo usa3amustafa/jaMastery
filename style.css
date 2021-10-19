@@ -52,6 +52,7 @@ section {
   padding-bottom: 2em;
 }
 .hero-section {
+  height: 100vh;
   padding: 4em 2em;
   display: flex;
   flex-direction: column;
