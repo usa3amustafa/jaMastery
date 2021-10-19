@@ -60,7 +60,7 @@ section {
 }
 .dark-mode {
   position: absolute;
-  top: 14vh;
+  top: 12vh;
   right: 0px;
   background-color: var(--white-clr);
   padding: 0.1em 0.2em 0.1em 1.5em;
