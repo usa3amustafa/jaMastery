@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --yellow-color: #e8eb5b;
+  --light-grey: #f2eeee;
+  --dark-grey: #e5e5e5;
+  --light-green: #6eb16a;
+  --poppins: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--dark-grey);
+  font-family: var(--poppins);
+}
+img {
+  width: 100%;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+header {
+  background-color: var(--light-grey);
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+}
+.hamburger {
+  cursor: pointer;
+}
+section {
+  padding-bottom: 2em;
+}
+.hero-section {
+  padding: 4em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+.hero-btn {
+  border: none;
+  color: var(--light-green);
+  background-color: inherit;
+  font-family: var(--poppins);
+  font-size: 1.3rem;
+}
+.details-section ul,
+ol {
+  padding: 0.5em 0 3em 1.25em;
+}
+.details-section ol li {
+  width: 90%;
+  padding-bottom: 0.5em;
+}
+.project {
+  padding: 1em 0;
+}
+.project-img {
+  padding: 1.7em 0 0.9em 0;
+}
+.project-name {
+  padding-bottom: 0.3em;
+}
+.project-description {
+  font-size: 0.9rem;
+}
