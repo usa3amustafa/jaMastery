@@ -52,8 +52,7 @@ section {
   padding-bottom: 2em;
 }
 .hero-section {
-  height: 100vh;
-  padding: 6em 2em 1em 2em;
+  padding: 6em 2em;
   display: flex;
   flex-direction: column;
   gap: 5em;
@@ -61,7 +60,7 @@ section {
 }
 .dark-mode {
   position: absolute;
-  top: 15vh;
+  top: 14vh;
   right: 0px;
   background-color: var(--white-clr);
   padding: 0.1em 0.2em 0.1em 1.5em;
