@@ -36,6 +36,7 @@ const revealSection = function (enteries, observer) {
 const obsOps = {
   root: null,
   threshold: 0.1,
+  rootMargin: '200px',
 };
 
 const sections = document.querySelectorAll('.section');
@@ -47,22 +48,21 @@ sections.forEach(section => {
 });
 
 //lazy loading
-// const targetImg = document.querySelectorAll('img[data-src]');
+const targetImg = document.querySelectorAll('img[data-src]');
 
-// const lazyImg = function (enteries, observer) {
-//   const [entry] = enteries;
-//   if (!entry.isIntersecting) return;
-//   entry.target.src = entry.target.dataset.src;
-//   entry.target.addEventListener('load', () => {
-//     entry.target.classList.remove('lazy-img');
-//   });
-//   observer.unobserve(entry.target);
-// };
+const lazyImg = function (enteries, observer) {
+  const [entry] = enteries;
+  if (!entry.isIntersecting) return;
+  entry.target.src = entry.target.dataset.src;
+  entry.target.addEventListener('load', () => {
+    entry.target.classList.remove('lazy-img');
+  });
+  observer.unobserve(entry.target);
+};
 
-// const imgObserver = new IntersectionObserver(lazyImg, {
-//   root: null,
-//   threshold: 0,
-//   rootMargin: '200px',
-// });
+const imgObserver = new IntersectionObserver(lazyImg, {
+  root: null,
+  threshold: 0,
+});
 
 // targetImg.forEach(img => imgObserver.observe(img));
