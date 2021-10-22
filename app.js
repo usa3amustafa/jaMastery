@@ -65,4 +65,4 @@ const imgObserver = new IntersectionObserver(lazyImg, {
   threshold: 0,
 });
 
-// targetImg.forEach(img => imgObserver.observe(img));
+targetImg.forEach(img => imgObserver.observe(img));
