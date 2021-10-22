@@ -48,11 +48,21 @@ header {
   align-items: center;
   padding: 1em 0;
 }
+.sticky {
+  position: fixed;
+  width: 100%;
+  background-color: var(--light-grey);
+}
 .hamburger {
   cursor: pointer;
 }
 section {
   padding-bottom: 2em;
+  transition: all 1s ease-in-out;
+}
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
 .hero-section {
   padding: 6em 2em;
@@ -76,10 +86,16 @@ section {
   background-color: inherit;
   font-family: var(--poppins);
   font-size: 1.3rem;
+  text-decoration: none;
+  text-align: center;
 }
+
 .details-section ul,
 ol {
   padding: 0.5em 0 3em 1.25em;
+}
+.lazy-img {
+  filter: blur(20px);
 }
 .details-section ol li {
   width: 90%;
@@ -100,6 +116,7 @@ ol {
 .form-title {
   padding-bottom: 0.7em;
 }
+
 .contact-us {
   background-color: var(--white-clr);
   padding: 3em 0;

@@ -33,13 +33,13 @@
         <div class="hero-img">
           <img src="./img/hero-img.svg" alt="" />
         </div>
-        <button class="hero-btn">
-          Learn More <i class="fas fa-arrow-down"></i>
-        </button>
+        <a class="hero-btn" href="#enroll-form">
+          Enroll Now&nbsp;<i class="fas fa-arrow-down"></i>
+        </a>
       </div>
     </section>
 
-    <section id="details-section">
+    <section id="details-section" class="section">
       <div class="container details-section">
         <h1>13 Weeks 48 Lectures</h1>
         <ul>
@@ -58,12 +58,21 @@
       </div>
     </section>
 
-    <section id="projects-section">
+    <section
+      id="projects-section"
+      class="section"
+      style="border: 1px solid black"
+    >
       <div class="container">
         <h1 class="project-section-title">Projects You Will Build</h1>
         <div class="project">
           <div class="project-img">
-            <img src="./img/prj-1.png" alt="" />
+            <img
+              data-src="./img/prj-1.png"
+              src="img/prj-1-lazy.png"
+              class="lazy-img"
+              alt=""
+            />
           </div>
           <h2 class="project-name">Bankist App</h2>
           <p class="project-description">
@@ -73,7 +82,12 @@
         </div>
         <div class="project">
           <div class="project-img">
-            <img src="./img/prj-2.png" alt="" />
+            <img
+              src="img/prj-2-lazy.png"
+              data-src="img/prj-2.png"
+              alt="Computer"
+              class="features__img lazy-img"
+            />
           </div>
           <h2 class="project-name">Guess My Number</h2>
           <p class="project-description">
@@ -83,7 +97,12 @@
         </div>
         <div class="project">
           <div class="project-img">
-            <img src="./img/prj-3.png" alt="" />
+            <img
+              src="./img/prj-3-lazy.png"
+              data-src="./img/prj-3.png"
+              class="lazy-img"
+              alt=""
+            />
           </div>
           <h2 class="project-name">Bankist Website</h2>
           <p class="project-description">
@@ -93,7 +112,12 @@
         </div>
         <div class="project">
           <div class="project-img">
-            <img src="./img/prj-4.png" alt="" />
+            <img
+              src="./img/prj-4-lazy.png"
+              data-src="./img/prj-4.png"
+              class="lazy-img"
+              alt=""
+            />
           </div>
           <h2 class="project-name">Forkify</h2>
           <p class="project-description">
@@ -103,9 +127,10 @@
       </div>
     </section>
 
-    <!-- contact form  -->
+    <!-- instructors  -->
 
-    <section class="contact-us">
+    <!-- contact form  -->
+    <section class="contact-us section" id="enroll-form">
       <div class="container">
         <h1 class="form-title">Enroll Today</h1>
         <form action="">
@@ -120,10 +145,7 @@
             name="email"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
           /><br />
-          <label for="cnin"
-            >CNIC*
-            <p class="cnic-format">(12345-1234567-1)</p> </label
-          ><br />
+          <label for="cnin">CNIC* (12345-1234567-1)</label><br />
           <input type="text" pattern="\d{5}-\d{7}-\d{1}" required /><br /><br />
           <label for="skill-level">Select Your Skill Level</label><br />
           <select class="skill-level" name="skill-level" id="">
